@@ -298,5 +298,74 @@
                 "3ed18de0e406d305"
             ]
         ]
+    },
+    {
+        "id": "26edfccb88141c35",
+        "type": "exec",
+        "z": "f7a1c5ad6b073a18",
+        "command": "vcgencmd measure_temp",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "9d1a85901c58cb25"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "290df3952fd1e23e",
+        "type": "inject",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 380,
+        "wires": [
+            [
+                "26edfccb88141c35"
+            ]
+        ]
+    },
+    {
+        "id": "9d1a85901c58cb25",
+        "type": "function",
+        "z": "f7a1c5ad6b073a18",
+        "name": "function 1",
+        "func": "var str = msg.payload\nmsg.payload = str.substring(5,9);\n\nnode.status({ text: \"Temp:\" + msg.payload });\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            []
+        ]
     }
 ]
