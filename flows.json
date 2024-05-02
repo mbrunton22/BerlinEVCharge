@@ -346,7 +346,8 @@
         "y": 380,
         "wires": [
             [
-                "26edfccb88141c35"
+                "26edfccb88141c35",
+                "670fe7c0afdba627"
             ]
         ]
     },
@@ -397,5 +398,100 @@
         "x": 790,
         "y": 340,
         "wires": []
+    },
+    {
+        "id": "670fe7c0afdba627",
+        "type": "exec",
+        "z": "f7a1c5ad6b073a18",
+        "command": "top -d 0.5 -b -n2 | grep \"Cpu(s)\"|tail -n 1 | awk '{print $2 + $4}'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "CPU",
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "b9aeee691d6115d2",
+                "5403058e5e430902"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b9aeee691d6115d2",
+        "type": "ui_gauge",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "group": "df6b0e5f5731700e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CPU Load",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5403058e5e430902",
+        "type": "ui_chart",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "group": "df6b0e5f5731700e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "CPU Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            []
+        ]
     }
 ]
