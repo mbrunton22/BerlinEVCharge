@@ -367,7 +367,8 @@
         "y": 360,
         "wires": [
             [
-                "e0f59f7833f2001a"
+                "e0f59f7833f2001a",
+                "7ea52c591c985584"
             ]
         ]
     },
@@ -490,6 +491,50 @@
         "className": "",
         "x": 590,
         "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7ea52c591c985584",
+        "type": "ui_chart",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "group": "df6b0e5f5731700e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 380,
         "wires": [
             []
         ]
