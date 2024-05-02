@@ -354,7 +354,7 @@
         "id": "9d1a85901c58cb25",
         "type": "function",
         "z": "f7a1c5ad6b073a18",
-        "name": "function 1",
+        "name": "transform",
         "func": "var str = msg.payload\nmsg.payload = str.substring(5,9);\n\nnode.status({ text: \"Temp:\" + msg.payload });\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -365,7 +365,37 @@
         "x": 600,
         "y": 360,
         "wires": [
-            []
+            [
+                "e0f59f7833f2001a"
+            ]
         ]
+    },
+    {
+        "id": "e0f59f7833f2001a",
+        "type": "ui_gauge",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "group": "df6b0e5f5731700e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "CPU Temperature",
+        "label": "C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "35",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 790,
+        "y": 340,
+        "wires": []
     }
 ]
