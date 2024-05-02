@@ -94,11 +94,11 @@
             }
         },
         "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "false",
+            "name": "EV Charging Dashboard",
+            "hideToolbar": "true",
             "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
+            "lockMenu": "icon",
+            "allowTempTheme": "false",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
                 "sx": 48,
