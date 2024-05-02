@@ -248,5 +248,55 @@
                 "7dc5cb3e9f349300"
             ]
         ]
+    },
+    {
+        "id": "85fc2db9a410cd1c",
+        "type": "inject",
+        "z": "f7a1c5ad6b073a18",
+        "name": "Test Connected",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "3ed18de0e406d305"
+            ]
+        ]
+    },
+    {
+        "id": "47fa7d9636a15f84",
+        "type": "inject",
+        "z": "f7a1c5ad6b073a18",
+        "name": "Test Disconnected",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "3ed18de0e406d305"
+            ]
+        ]
     }
 ]
