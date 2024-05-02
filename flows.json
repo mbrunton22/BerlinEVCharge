@@ -191,7 +191,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 970,
+        "x": 870,
         "y": 80,
         "wires": []
     },
@@ -292,7 +292,7 @@
         "payload": "0",
         "payloadType": "num",
         "x": 130,
-        "y": 260,
+        "y": 200,
         "wires": [
             [
                 "eb5dbf84bba43d1c"
@@ -684,7 +684,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 340,
-        "y": 260,
+        "y": 200,
         "wires": [
             [
                 "3ed18de0e406d305"
