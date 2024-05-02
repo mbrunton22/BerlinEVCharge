@@ -659,8 +659,7 @@
         "y": 160,
         "wires": [
             [
-                "3ed18de0e406d305",
-                "5bb4ab4db574ffb9"
+                "3ed18de0e406d305"
             ]
         ]
     },
@@ -691,20 +690,5 @@
                 "3ed18de0e406d305"
             ]
         ]
-    },
-    {
-        "id": "5bb4ab4db574ffb9",
-        "type": "rpi-gpio out",
-        "z": "f7a1c5ad6b073a18",
-        "name": "",
-        "pin": "17",
-        "set": "",
-        "level": "0",
-        "freq": "",
-        "out": "out",
-        "bcm": true,
-        "x": 560,
-        "y": 180,
-        "wires": []
     }
 ]
