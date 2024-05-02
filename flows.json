@@ -538,5 +538,101 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "818d204ebf027952",
+        "type": "ui_button",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "group": "df6b0e5f5731700e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown",
+        "tooltip": "",
+        "color": "red",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "b9540acdc3741b7e"
+            ]
+        ]
+    },
+    {
+        "id": "b9540acdc3741b7e",
+        "type": "exec",
+        "z": "f7a1c5ad6b073a18",
+        "command": "sudo shutdown -h now",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 380,
+        "y": 540,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c2e450aaf45ba606",
+        "type": "ui_button",
+        "z": "f7a1c5ad6b073a18",
+        "name": "",
+        "group": "df6b0e5f5731700e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reboot",
+        "tooltip": "",
+        "color": "orange",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "78e4e9b3ea940d58"
+            ]
+        ]
+    },
+    {
+        "id": "78e4e9b3ea940d58",
+        "type": "exec",
+        "z": "f7a1c5ad6b073a18",
+        "command": "sudo reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Reboot",
+        "x": 380,
+        "y": 600,
+        "wires": [
+            [],
+            [],
+            []
+        ]
     }
 ]
