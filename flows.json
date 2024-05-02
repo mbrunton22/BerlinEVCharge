@@ -560,7 +560,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 200,
-        "y": 520,
+        "y": 500,
         "wires": [
             [
                 "b9540acdc3741b7e"
@@ -579,8 +579,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Shutdown",
-        "x": 380,
-        "y": 540,
+        "x": 340,
+        "y": 500,
         "wires": [
             [],
             [],
@@ -608,7 +608,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 200,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "78e4e9b3ea940d58"
@@ -627,8 +627,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "Reboot",
-        "x": 380,
-        "y": 600,
+        "x": 340,
+        "y": 560,
         "wires": [
             [],
             [],
